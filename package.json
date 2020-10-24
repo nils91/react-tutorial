@@ -1,6 +1,6 @@
 {
   "name": "react-tutorial",
-  "homepage": "http://nils91.github.io/react-tutorial"
+  "homepage": "http://nils91.github.io/react-tutorial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
