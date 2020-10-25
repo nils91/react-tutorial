@@ -22,7 +22,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./build
           user_name: 'Nils Dralle/gh-actions[bot]'
           user_email: 'nils.91@googlemail.com'
           commit_message: Auto deploy to gh-pages
