@@ -30,7 +30,8 @@ class Board extends React.Component {
   handleClick(i){
     const squares=this.state.squares.slice(); //copy the array
     const winner=calculateWinner(squares);
-    if(winner || squares[i]){
+    const draw=isDraw(squares);
+    if(draw || winner || squares[i]){
       return;
     }else{
           squares[i]=this.state.xIsNext?'X':'O';
