@@ -1,0 +1,21 @@
+name: Test if build
+
+on: 
+  push:
+  - 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+      - name: Build with NPM
+        run: npm install      
+      - run: npm run build --if-present
+      - name: Deploy to gh-pages
+        run: npm run deploy
