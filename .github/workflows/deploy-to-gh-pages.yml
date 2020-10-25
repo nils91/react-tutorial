@@ -1,8 +1,9 @@
-name: Test if build
+name: Deploy to gh-pages
 
-on: 
+on:
   push:
-  - 'main'
+    branches:
+    - 'main'
 
 jobs:
   deploy:
